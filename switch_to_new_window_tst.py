@@ -18,7 +18,7 @@ x = int(x_number)
 
 form_x = log(abs(12 * sin(x)))
 
-answer_input = browser.find_element(By.ID, 'answer')
+answer_input = browser.find_element(By.NAME, 'text')
 answer_input.send_keys(form_x)
 
 button = browser.find_element(By.CSS_SELECTOR, '.btn.btn-primary')
