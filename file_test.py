@@ -15,8 +15,8 @@ first_name_field.send_keys('Rustam')
 last_name_field = browser.find_element(By.NAME, 'lastname')
 last_name_field.send_keys('Rusti')
 
-email_field = browser.find_element(By.NAME, "email")
-email_field.send_keys('trey@yandex.ru')
+email_field_input = browser.find_element(By.NAME, "email")
+email_field_input.send_keys('trey@yandex.ru')
 
 load_file_button = browser.find_element(By.ID, 'file')
 load_file_button.send_keys(file_path)

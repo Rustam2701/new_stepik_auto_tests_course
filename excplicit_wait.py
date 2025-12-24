@@ -1,9 +1,7 @@
 from math import sin, log
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -20,7 +18,7 @@ button.click()
 x_number = browser.find_element(By.ID, 'input_value').text
 x = int(x_number)
 
-form_x = log(abs(12*sin(x)))
+form_x = log(abs(12 * sin(x)))
 
 answer_input = browser.find_element(By.ID, 'answer')
 answer_input.send_keys(form_x)
@@ -28,7 +26,6 @@ answer_input.send_keys(form_x)
 button = browser.find_element(By.ID, 'solve')
 browser.execute_script("arguments[0].scrollIntoView(true);", button)
 button.click()
-
 
 time.sleep(30)
 browser.quit()
