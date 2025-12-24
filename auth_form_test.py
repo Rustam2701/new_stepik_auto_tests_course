@@ -27,9 +27,5 @@ button = browser.find_element(By.CSS_SELECTOR, '.btn.btn-primary')
 browser.execute_script("return arguments[0].scrollIntoView(true);", button)
 button.click()
 
-# успеваем скопировать код за 30 секунд
 time.sleep(30)
-# закрываем браузер после всех манипуляций
 browser.quit()
-
-# не забываем оставить пустую строку в конце файла
